@@ -53,7 +53,7 @@ namespace HotelListings
             }
 
             app.UseSwagger();
-            app.UseCors("AllowAll")
+            app.UseCors("AllowAll");
             app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "HotelListings v1"));
             
             app.UseHttpsRedirection();
